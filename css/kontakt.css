@@ -1,0 +1,109 @@
+/*hlavná časť*/
+.main_contact{
+    padding: 5%;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main_contact p{
+    margin: 2%;
+  }
+
+  /*blok v ktorom sú dva bloky (informácie, formulár)*/
+  .contact{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main_contact a{
+    color: #59656b;
+  }
+  .main_contact a:hover{
+    color: black;
+  }
+
+  /*blok s kontaktnými informáciami*/
+  .contact_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 3;
+    padding: 5%;
+    border-radius: 5px;
+    gap: 5px;
+    background-color: rgb(224, 217, 217);
+    color: #59656b;
+    box-shadow: 3px 5px 5px 5px #888888;
+  }
+  .contact_info table{
+    text-align: justify;
+  }
+  .first-cell{
+    width: 80px;
+  }
+  
+  /*blok v ktorom je formulár*/
+  .napiste_nam{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    padding: 5%;
+    border-radius: 5px;
+    gap: 5px;
+    background: #59656b;
+    color: rgb(224, 217, 217);
+    box-shadow: 3px 5px 5px 5px #888888;
+  }
+  /*kontaktný formulár*/
+  .formular{
+    padding: 2%;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  form input{
+    border: 2px solid #151d22;
+    border-radius: 6px;
+    height: 35px;
+    background-color: rgb(224, 217, 217);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  textarea{
+    border: 2px solid #151d22;
+    border-radius: 6px;
+    background-color: rgb(224, 217, 217);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+  }
+  .submit-button{
+    background-color: #151d22;
+    color: white;
+    font-size: medium;
+    border: 5px solid #151d22;
+    border-radius: 5px;
+    height: 45px;
+  }
+  .submit-button:hover{
+    color: #59656b;
+  }
+
+/*responsive*/
+@media screen and (max-width: 900px){
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_info{
+    align-items: center;
+  }
+}

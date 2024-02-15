@@ -1,0 +1,71 @@
+/*slideshow container*/
+.slideshow-container{
+    position: relative;
+    background: rgb(224, 217, 217);
+}
+  
+/*slides*/
+.mySlides{
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+  
+/*next & previous tlačidlá*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/*umiestnenie next tlačidla napravo*/
+.next{
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/*next & previous tlačidlá hover*/
+.prev:hover, .next:hover{
+    background-color: #151515;
+    color: white;
+}
+  
+/*dot indikátory container*/
+.dot-container{
+    text-align: center;
+    padding: 20px;
+    background: rgb(224, 217, 217);
+}
+  
+/*dot*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: rgb(187, 183, 183);
+    display: inline-block;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+  
+/*italic font pre všetky q*/
+q{
+    font-style: italic;
+}
+  
+/*meno referenta*/
+.autor{
+    color: #595959;
+}

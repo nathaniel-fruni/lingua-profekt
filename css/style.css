@@ -1,0 +1,286 @@
+*{
+  margin: 0px;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(243, 239, 239);
+}
+.p-container{
+  margin: 2%;
+}
+.title-container{
+  margin-bottom: 2%;
+}
+
+/*NAVIGÁCIA*/
+header{
+  background-color:#59656b;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  top: 0;
+}
+.container{
+  padding-left:5%;
+  padding-right:5%;
+}
+.main-menu li{
+  display:inline;
+  margin-left: 20px;
+}
+a{
+  text-decoration: none;
+  color: rgb(224, 217, 217);
+}
+a:hover{
+  color: black;
+}
+.hamburger{
+  display: none;
+}
+/*logo*/
+header img{
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  height: 80%;
+}
+
+/*ÚVODNÁ SEKCIA*/
+.uvod{
+  background-color: rgb(224, 217, 217);
+  text-align: center;
+  margin: 2%;
+  padding: 10%;
+  font-size: x-large;
+}
+.uvod h1{
+  margin-bottom: 2%;
+}
+.uvod p{
+  margin-bottom: 3%;
+}
+.a-button{
+  background-color: #151d22;
+  color: white;
+  border: 12px solid #151d22;
+  border-radius: 5px;
+  font-size: large;
+}
+.a-button:hover{
+  color: #59656b;
+}
+
+/*SLUŽBY*/
+.sluzby{
+  font-size: large;
+  text-align: center;
+  padding: 5%;
+}
+/*div, kde sú všetky boxy*/
+.boxy{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 2%;
+}
+/*jednotlivé boxy*/
+.services{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  background-color: rgb(243, 239, 239);
+  color: #59656b;
+  padding: 30px;
+  border-radius: 2px;
+}
+.services i{
+  margin: 10px;
+}
+.services:hover{
+  background-color: rgb(243, 239, 239);
+  box-shadow: 3px 5px 5px 5px #888888;
+}
+
+/*CENNÍK*/
+.cennik{
+  font-size: large;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  background-color: rgb(224, 217, 217);
+  margin: 2%;
+}
+.tabulky-cennik{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.cennik table{
+  margin:30px;
+  padding: 2%;
+  width: 300px;
+  border: 1px solid rgb(164, 160, 160);
+  box-shadow: 3px 5px 5px 5px #888888;
+}
+.cennik i{
+  margin: 5px;
+}
+
+/*REFERENCIE*/
+.referencie{
+  background-color: #59656b;
+  font-size: large;
+  margin: 2%;
+  padding: 4%;
+}
+.referencie-text{
+  text-align: center;
+  color: rgb(224, 217, 217);
+}
+
+/*THANKYOU PAGE*/
+.thank-you{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  height: 450px;
+}
+
+/*O NÁS*/
+.o-nas{
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+.o-nas p{
+  margin: 2%;
+  text-align: center;
+}
+.o-nas ul{
+  list-style-type: none;
+  margin-bottom: 2%; 
+}
+/*fotky*/
+.fotky{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 2%;
+}
+.obrazok{
+  width: 350px;
+  object-fit: cover;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #59656b;
+  color: rgb(224, 217, 217);
+  padding-top:3%;
+  padding-bottom:3%;
+  font-size: small;
+}
+footer h4{
+  margin-bottom: 15px;;
+}
+footer p{
+  width: 85%;
+}
+footer ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.footer_stlpec{
+  width:25%;
+}
+.footer_riadok{
+  display:flex;
+  flex-direction: row;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+
+/*RESPONSIVE*/
+  @media screen and (max-width: 900px){
+    body{
+      overflow-x: hidden;
+    }
+
+    /*NAVIGÁCIA*/
+    .main-menu{
+      display: none;
+    }
+    .hamburger {
+      display: inline;
+    }
+    .main-header{
+      position:sticky;
+      top:0px;
+    }
+    .main-menu.responsive {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width:100%;
+      top:60px;
+      left: 0px;
+      padding-top:20px;
+      padding-bottom:20px;
+      gap: 15px;
+      background-color: #59656b;
+    }
+    .main-menu.responsive li{
+      display: block;
+      margin-left:0px;
+    }
+
+    /*ÚVOD*/
+    .uvod{
+      background: rgb(243, 239, 239);
+      text-align: center;
+    }
+
+    /*SLUŽBY boxy*/
+    .boxy{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    /*CENNÍK*/
+    .tabulky-cennik{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cennik table{
+      width: 350px;
+      height: 225px;
+    }
+
+    /*FOOTER*/
+    .footer_riadok{
+      flex-direction: column;
+      gap: 15px;
+    }
+    .footer_stlpec{
+      width: 100% !important;
+    }
+  }

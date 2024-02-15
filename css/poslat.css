@@ -1,0 +1,114 @@
+/*Section v ktorom je nadpis a objednávkový formulár*/
+.poslat{
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: large;
+}
+/*Div s inputmi*/
+.vyber{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+/*File input a radio inputy*/
+.vyber-2{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/*Celý formulár*/
+form{
+  padding: 3%;
+  background-color: #59656b;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px 5px #888888;
+  color: rgb(224, 217, 217);
+}
+/*Text, email inputy*/
+.kontakt{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2%;
+}
+.kontakt p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  height: 35px;
+}
+form input[type=text], input[type=email], form input[type=file]{
+  border-radius: 5px;
+  border: 2px solid #151d22;
+  background-color:rgb(238, 235, 235);
+}
+/*Submit button*/
+.submit-btn{
+  padding-top: 3%;
+  text-align: center;
+}
+.submit-btn input{
+  background-color: #151d22;
+  color: white;
+  border: 15px solid #151d22;
+  border-radius: 5px;
+  height: 45px;
+}
+.submit-btn :hover{
+  color: #59656b;
+}
+/*File input*/
+#myfile{
+  width: 300px;
+  height: 100px;
+}
+
+/*akordeón*/
+.postup{
+  font-size: large;
+}
+.postup h2{
+  margin: 2%;
+}
+.question{
+  background-color: rgb(224, 217, 217);
+  color: #151d22;
+  padding: 2%;
+}
+.accordion .answer{
+  display: none;
+}
+.question::before{
+  content: '+ ';
+}
+.question:hover,
+.accordion.active .answer{
+  background-color: rgb(189, 185, 185);
+  cursor: pointer;
+}
+.accordion.active .answer{
+  display: block;
+  background-color: rgb(190, 190, 190);
+  color: #151d22;
+  padding: 2%;
+}
+.accordion.active .question::before{
+  content: '- ';
+}
+
+#postup{
+  text-align: center;
+}
+
+@media screen and (max-width: 900px){
+  .vyber{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 2%;
+  } 
+}
